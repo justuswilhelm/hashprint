@@ -5,7 +5,10 @@ Perform a random walk seeded by a byte array.
 Can be used to visualize SSH fingerprints.
 Inspiration: http://aarontoponce.org/drunken_bishop.pdf
 """
-from itertools import zip_longest
+try:
+    from itertools import zip_longest
+except ImportError:
+    from itertools import izip_longest as zip_longest
 
 
 def grouper(iterable, n):
