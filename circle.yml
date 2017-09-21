@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: tzenderman/docker-pyenv:latest
+    working_directory: ~/hashprint
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            cd /root/.pyenv/plugins/python-build/../.. && git fetch && git checkout origin/master && cd -
+            pyenv install 2.7.9
+            pyenv install 3.3.6
+            pyenv install 3.6.2
+            pip install -r requirements.txt
+      - run:
+          name: run tests
+          command: |
+            tox

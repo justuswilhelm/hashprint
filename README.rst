@@ -24,3 +24,22 @@ Example
   |                 |
   |                 |
   +-----------------+
+
+Testing
+-------
+
+Testing is done with tox and pytest.
+
+To add multiple python versions locally, run
+
+::
+  pyenv install 2.7.9
+  pyenv install 3.3.6
+  pyenv install 3.6.2
+
+Supported Python Versions
+------------------
+
+- Python 2.7
+- Python 3.3
+- Python 3.6
