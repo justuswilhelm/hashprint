@@ -11,7 +11,7 @@ except ImportError:
     from itertools import izip_longest as zip_longest
 
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 def grouper(iterable, n):
