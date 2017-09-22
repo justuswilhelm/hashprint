@@ -11,6 +11,9 @@ except ImportError:
     from itertools import izip_longest as zip_longest
 
 
+__version__ = '1.0.0'
+
+
 def grouper(iterable, n):
     """
     Collect data into fixed-length chunks or blocks.

@@ -1,5 +1,7 @@
 from setuptools import setup
 
+import hashprint
+
 setup(
     author='Justus Perlwitz',
     author_email='hello@justus.pw',
@@ -8,7 +10,7 @@ setup(
     name='hashprint',
     packages=['hashprint'],
     url='https://github.com/justuswilhelm/hashprint',
-    version='1.0.0',
+    version=hashprint.__version__,
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.3',
